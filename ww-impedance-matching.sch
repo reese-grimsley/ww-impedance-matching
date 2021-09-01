@@ -4311,7 +4311,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </class>
 </classes>
 <parts>
-<part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_E4P"/>
+<part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_E4P">
+<attribute name="MP" value="TSM-110-02-S-DV"/>
+<attribute name="MPN" value="TSM-110-02-S-DV"/>
+<attribute name="PART_NO" value="TSM-110-02-S-DV"/>
+</part>
 <part name="GND1" library="Supplies" deviceset="GND" device=""/>
 <part name="+3V1" library="Supplies" deviceset="+3V3" device=""/>
 <part name="P+1" library="Supplies" deviceset="+5V" device=""/>
@@ -4596,7 +4600,11 @@ max 16mA GPIO</text>
 This is due to the SP4T mux's voltage range.</text>
 </plain>
 <instances>
-<instance part="X1" gate="G$1" x="88.9" y="101.6" smashed="yes" rot="MR0"/>
+<instance part="X1" gate="G$1" x="88.9" y="101.6" smashed="yes" rot="MR0">
+<attribute name="MP" x="88.9" y="101.6" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="PART_NO" x="88.9" y="101.6" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="88.9" y="101.6" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="GND1" gate="1" x="88.9" y="55.88" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="91.44" y="53.34" size="1.778" layer="96" rot="MR0"/>
 </instance>

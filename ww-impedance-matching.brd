@@ -792,7 +792,11 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="raspberrypi_bastelstube_v13" package="RASPI_BOARD_B+_EDGES_4DRILL_PAD" value="RASPI_BOARD_B+_E4P" x="3.81" y="1.27" smashed="yes"/>
+<element name="X1" library="raspberrypi_bastelstube_v13" package="RASPI_BOARD_B+_EDGES_4DRILL_PAD" value="RASPI_BOARD_B+_E4P" x="3.81" y="1.27" smashed="yes">
+<attribute name="MP" value="TSM-110-02-S-DV" x="3.81" y="1.27" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="TSM-110-02-S-DV" x="3.81" y="1.27" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NO" value="TSM-110-02-S-DV" x="3.81" y="1.27" size="1.778" layer="27" display="off"/>
+</element>
 <element name="JP_5V" library="Connectors" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="8.763" y="49.53" smashed="yes" rot="R270">
 <attribute name="BOM" value="EXCLUDE" x="8.763" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="9.525" y="49.53" size="0.6096" layer="25" font="vector" rot="R270" align="bottom-center"/>
