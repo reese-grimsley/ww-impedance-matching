@@ -4306,6 +4306,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </class>
 <class number="1" name="PWR" width="0.3048" drill="0">
 </class>
+<class number="2" name="RF" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_E4P"/>
@@ -5749,7 +5751,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="289.56" y1="373.38" x2="289.56" y2="383.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="RF.F0.0" class="2">
 <segment>
 <pinref part="CT.F0.1" gate="G$1" pin="C+"/>
 <wire x1="307.34" y1="335.28" x2="307.34" y2="347.98" width="0.1524" layer="91"/>
@@ -5767,7 +5769,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="297.18" y1="347.98" x2="307.34" y2="347.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="F0.OUT" class="0">
+<net name="F0.OUT" class="2">
 <segment>
 <pinref part="Z.F0.3" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="332.74" x2="332.74" y2="347.98" width="0.1524" layer="91"/>
@@ -5785,7 +5787,7 @@ This is due to the SP4T mux's voltage range.</text>
 <label x="487.68" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="F0.IN" class="0">
+<net name="F0.IN" class="2">
 <segment>
 <pinref part="CT.F0.0" gate="G$1" pin="C+"/>
 <wire x1="284.48" y1="355.6" x2="281.94" y2="355.6" width="0.1524" layer="91"/>
@@ -5920,7 +5922,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="289.56" y1="274.32" x2="289.56" y2="284.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="RF.F1.0" class="2">
 <segment>
 <pinref part="CT.F1.1" gate="G$1" pin="C+"/>
 <wire x1="307.34" y1="236.22" x2="307.34" y2="248.92" width="0.1524" layer="91"/>
@@ -5938,7 +5940,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="297.18" y1="248.92" x2="307.34" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="F2.IN" class="0">
+<net name="F2.IN" class="2">
 <segment>
 <pinref part="CT.F2.0" gate="G$1" pin="C+"/>
 <wire x1="284.48" y1="162.56" x2="281.94" y2="162.56" width="0.1524" layer="91"/>
@@ -5957,7 +5959,7 @@ This is due to the SP4T mux's voltage range.</text>
 <label x="223.52" y="246.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="F1.IN" class="0">
+<net name="F1.IN" class="2">
 <segment>
 <pinref part="CT.F1.0" gate="G$1" pin="C+"/>
 <wire x1="284.48" y1="256.54" x2="281.94" y2="256.54" width="0.1524" layer="91"/>
@@ -6012,7 +6014,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="289.56" y1="180.34" x2="289.56" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$49" class="0">
+<net name="RF.F2.0" class="2">
 <segment>
 <pinref part="CT.F2.1" gate="G$1" pin="C+"/>
 <wire x1="307.34" y1="142.24" x2="307.34" y2="154.94" width="0.1524" layer="91"/>
@@ -6030,7 +6032,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="297.18" y1="154.94" x2="307.34" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="F2.OUT" class="0">
+<net name="F2.OUT" class="2">
 <segment>
 <pinref part="Z.F2.3" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="139.7" x2="332.74" y2="154.94" width="0.1524" layer="91"/>
@@ -6084,7 +6086,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="289.56" y1="86.36" x2="289.56" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="RF.F3.0" class="2">
 <segment>
 <pinref part="CT.F3.1" gate="G$1" pin="C+"/>
 <wire x1="307.34" y1="48.26" x2="307.34" y2="60.96" width="0.1524" layer="91"/>
@@ -6102,7 +6104,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="297.18" y1="60.96" x2="307.34" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="F3.OUT" class="0">
+<net name="F3.OUT" class="2">
 <segment>
 <pinref part="Z.F3.3" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="45.72" x2="332.74" y2="60.96" width="0.1524" layer="91"/>
@@ -6120,7 +6122,7 @@ This is due to the SP4T mux's voltage range.</text>
 <label x="487.68" y="220.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="F3.IN" class="0">
+<net name="F3.IN" class="2">
 <segment>
 <pinref part="CT.F3.0" gate="G$1" pin="C+"/>
 <wire x1="284.48" y1="68.58" x2="281.94" y2="68.58" width="0.1524" layer="91"/>
@@ -6209,7 +6211,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="243.84" y1="68.58" x2="246.38" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RF_OUT" class="0">
+<net name="RF_OUT" class="2">
 <segment>
 <pinref part="MUX.RF.OUT" gate="A" pin="RFC"/>
 <pinref part="SMA.OUT" gate="G1" pin="1"/>
@@ -6218,7 +6220,7 @@ This is due to the SP4T mux's voltage range.</text>
 <label x="490.22" y="233.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RF_IN" class="0">
+<net name="RF_IN" class="2">
 <segment>
 <pinref part="SMA.IN" gate="G1" pin="1"/>
 <wire x1="68.58" y1="251.46" x2="152.4" y2="251.46" width="0.1524" layer="91"/>
@@ -6354,7 +6356,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="294.64" y1="205.74" x2="292.1" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="F1.OUT" class="0">
+<net name="F1.OUT" class="2">
 <segment>
 <pinref part="Z.F1.2" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="248.92" x2="332.74" y2="248.92" width="0.1524" layer="91"/>
