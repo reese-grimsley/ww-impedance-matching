@@ -4306,7 +4306,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </class>
 <class number="1" name="PWR" width="0.3048" drill="0">
 </class>
-<class number="2" name="RF" width="0" drill="0">
+<class number="2" name="RF" width="0.254" drill="0">
+<clearance class="2" value="0.2032"/>
 </class>
 </classes>
 <parts>
@@ -4352,7 +4353,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="JP.F0.SCL1" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="JP.F0.SDA1" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="JP.F0.SCL0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
-<part name="JP.F0.SD0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
+<part name="JP.F0.SDA0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="GND7" library="Supplies" deviceset="GND" device=""/>
 <part name="GND8" library="Supplies" deviceset="GND" device=""/>
 <part name="Z.F1.1" library="Resistors" deviceset="R-" device="0603"/>
@@ -4368,7 +4369,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="JP.F1.SCL1" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="JP.F1.SDA1" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="JP.F1.SCL0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
-<part name="JP.F1.SD0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
+<part name="JP.F1.SDA0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="C5" library="Capacitors" deviceset="C-" device="0603" value="100n">
 <attribute name="MANUFACTURER" value="YAGEO"/>
 <attribute name="MP" value="CC0603MRX7R7BB104"/>
@@ -4390,7 +4391,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="JP.F2.SCL1" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="JP.F2.SDA1" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="JP.F2.SCL0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
-<part name="JP.F2.SD0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
+<part name="JP.F2.SDA0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="GND31" library="Supplies" deviceset="GND" device=""/>
 <part name="GND32" library="Supplies" deviceset="GND" device=""/>
 <part name="Z.F3.1" library="Resistors" deviceset="R-" device="0603"/>
@@ -4406,7 +4407,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="JP.F3.SCL1" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="JP.F3.SDA1" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="JP.F3.SCL0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
-<part name="JP.F3.SD0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
+<part name="JP.F3.SDA0" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="GND25" library="Supplies" deviceset="GND" device=""/>
 <part name="GND26" library="Supplies" deviceset="GND" device=""/>
 <part name="SMA.IN" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-871/880" package3d_urn="urn:adsk.eagle:package:6229/1">
@@ -4588,7 +4589,7 @@ If there are two, I2C addr conflict (0x60).
 NCD2400M1 has a different addr (0x61), but
 is out of stock as of 8/31/21. 
 If that is available, two can be used.</text>
-<text x="109.22" y="124.46" size="1.778" layer="91">Muxes take &lt;2.7V in
+<text x="109.22" y="129.54" size="1.778" layer="91">Muxes take &lt;2.7V in
 Divide and use LED indicator
 max 16mA GPIO</text>
 <text x="63.5" y="264.16" size="1.778" layer="91">Input signal should be less than 2.7V pk-pk
@@ -4702,7 +4703,7 @@ This is due to the SP4T mux's voltage range.</text>
 <instance part="JP.F0.SCL0" gate="G$1" x="294.64" y="381" smashed="yes" rot="MR270">
 <attribute name="NAME" x="292.1" y="381" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
-<instance part="JP.F0.SD0" gate="G$1" x="289.56" y="388.62" smashed="yes" rot="MR270">
+<instance part="JP.F0.SDA0" gate="G$1" x="289.56" y="388.62" smashed="yes" rot="MR270">
 <attribute name="NAME" x="287.02" y="388.62" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
 <instance part="GND7" gate="1" x="276.86" y="353.06" smashed="yes"/>
@@ -4750,7 +4751,7 @@ This is due to the SP4T mux's voltage range.</text>
 <instance part="JP.F1.SCL0" gate="G$1" x="294.64" y="281.94" smashed="yes" rot="MR270">
 <attribute name="NAME" x="292.1" y="281.94" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
-<instance part="JP.F1.SD0" gate="G$1" x="289.56" y="289.56" smashed="yes" rot="MR270">
+<instance part="JP.F1.SDA0" gate="G$1" x="289.56" y="289.56" smashed="yes" rot="MR270">
 <attribute name="NAME" x="287.02" y="289.56" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
 <instance part="C5" gate="G$1" x="276.86" y="261.62" smashed="yes">
@@ -4804,7 +4805,7 @@ This is due to the SP4T mux's voltage range.</text>
 <instance part="JP.F2.SCL0" gate="G$1" x="294.64" y="187.96" smashed="yes" rot="MR270">
 <attribute name="NAME" x="292.1" y="187.96" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
-<instance part="JP.F2.SD0" gate="G$1" x="289.56" y="195.58" smashed="yes" rot="MR270">
+<instance part="JP.F2.SDA0" gate="G$1" x="289.56" y="195.58" smashed="yes" rot="MR270">
 <attribute name="NAME" x="287.02" y="195.58" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
 <instance part="GND31" gate="1" x="276.86" y="160.02" smashed="yes"/>
@@ -4852,7 +4853,7 @@ This is due to the SP4T mux's voltage range.</text>
 <instance part="JP.F3.SCL0" gate="G$1" x="294.64" y="93.98" smashed="yes" rot="MR270">
 <attribute name="NAME" x="292.1" y="93.98" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
-<instance part="JP.F3.SD0" gate="G$1" x="289.56" y="101.6" smashed="yes" rot="MR270">
+<instance part="JP.F3.SDA0" gate="G$1" x="289.56" y="101.6" smashed="yes" rot="MR270">
 <attribute name="NAME" x="287.02" y="101.6" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
 <instance part="GND25" gate="1" x="276.86" y="66.04" smashed="yes"/>
@@ -5015,51 +5016,51 @@ This is due to the SP4T mux's voltage range.</text>
 <attribute name="MPN" x="114.3" y="116.84" size="1.778" layer="96" display="off"/>
 <attribute name="PART_NO" x="114.3" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R4" gate="G$1" x="132.08" y="96.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.5814" y="92.71" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="135.382" y="92.71" size="1.778" layer="96" rot="R90"/>
-<attribute name="MP" x="132.08" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MPN" x="132.08" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NO" x="132.08" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="R4" gate="G$1" x="132.08" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.5814" y="90.17" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="135.382" y="90.17" size="1.778" layer="96" rot="R90"/>
+<attribute name="MP" x="132.08" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="132.08" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NO" x="132.08" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="GND33" gate="1" x="137.16" y="86.36" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="139.7" y="83.82" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND33" gate="1" x="137.16" y="83.82" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="139.7" y="81.28" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="MUX1" gate="G$1" x="132.08" y="109.22" smashed="yes">
-<attribute name="NAME" x="135.636" y="104.648" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="137.795" y="104.648" size="1.778" layer="96" rot="R90"/>
-<attribute name="MP" x="132.08" y="109.22" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="132.08" y="109.22" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NO" x="132.08" y="109.22" size="1.778" layer="96" display="off"/>
+<instance part="MUX1" gate="G$1" x="132.08" y="106.68" smashed="yes">
+<attribute name="NAME" x="135.636" y="102.108" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="137.795" y="102.108" size="1.778" layer="96" rot="R90"/>
+<attribute name="MP" x="132.08" y="106.68" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="132.08" y="106.68" size="1.778" layer="96" display="off"/>
+<attribute name="PART_NO" x="132.08" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="MUX0" gate="G$1" x="139.7" y="109.22" smashed="yes">
-<attribute name="NAME" x="143.256" y="104.648" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.415" y="104.648" size="1.778" layer="96" rot="R90"/>
-<attribute name="MP" x="139.7" y="109.22" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="139.7" y="109.22" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NO" x="139.7" y="109.22" size="1.778" layer="96" display="off"/>
+<instance part="MUX0" gate="G$1" x="139.7" y="106.68" smashed="yes">
+<attribute name="NAME" x="143.256" y="102.108" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.415" y="102.108" size="1.778" layer="96" rot="R90"/>
+<attribute name="MP" x="139.7" y="106.68" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="139.7" y="106.68" size="1.778" layer="96" display="off"/>
+<attribute name="PART_NO" x="139.7" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R2" gate="G$1" x="124.46" y="114.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="128.27" y="112.8014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="123.19" y="112.522" size="1.778" layer="96" rot="R180"/>
-<attribute name="MP" x="124.46" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="MPN" x="124.46" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="PART_NO" x="124.46" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="R2" gate="G$1" x="124.46" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="128.27" y="110.2614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="123.19" y="109.982" size="1.778" layer="96" rot="R180"/>
+<attribute name="MP" x="124.46" y="111.76" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="124.46" y="111.76" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PART_NO" x="124.46" y="111.76" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="R3" gate="G$1" x="139.7" y="96.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="138.2014" y="92.71" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="143.002" y="92.71" size="1.778" layer="96" rot="R90"/>
-<attribute name="MP" x="139.7" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MPN" x="139.7" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NO" x="139.7" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="R3" gate="G$1" x="139.7" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.2014" y="90.17" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="143.002" y="90.17" size="1.778" layer="96" rot="R90"/>
+<attribute name="MP" x="139.7" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="139.7" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NO" x="139.7" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="T.M0" gate="G$1" x="139.7" y="121.92" smashed="yes">
-<attribute name="NAME" x="138.43" y="123.19" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="140.97" y="120.65" size="1.778" layer="97"/>
+<instance part="T.M0" gate="G$1" x="139.7" y="124.46" smashed="yes">
+<attribute name="NAME" x="138.43" y="125.73" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="140.97" y="123.19" size="1.778" layer="97"/>
 </instance>
-<instance part="T.M1" gate="G$1" x="132.08" y="121.92" smashed="yes">
-<attribute name="NAME" x="130.81" y="123.19" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="133.35" y="120.65" size="1.778" layer="97"/>
+<instance part="T.M1" gate="G$1" x="132.08" y="124.46" smashed="yes">
+<attribute name="NAME" x="130.81" y="125.73" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="133.35" y="123.19" size="1.778" layer="97"/>
 </instance>
 <instance part="C13" gate="G$1" x="157.48" y="378.46" smashed="yes">
 <attribute name="NAME" x="158.496" y="380.365" size="1.778" layer="95"/>
@@ -5094,8 +5095,8 @@ This is due to the SP4T mux's voltage range.</text>
 </bus>
 <bus name="MUX_CTRL:MUX.A0,MUX.A1">
 <segment>
-<wire x1="147.32" y1="289.56" x2="147.32" y2="12.7" width="0.762" layer="92"/>
-<wire x1="147.32" y1="12.7" x2="419.1" y2="12.7" width="0.762" layer="92"/>
+<wire x1="147.32" y1="287.02" x2="147.32" y2="10.16" width="0.762" layer="92"/>
+<wire x1="147.32" y1="10.16" x2="419.1" y2="12.7" width="0.762" layer="92"/>
 <wire x1="419.1" y1="12.7" x2="419.1" y2="218.44" width="0.762" layer="92"/>
 <label x="393.7" y="17.78" size="2.54" layer="95"/>
 <label x="152.4" y="170.18" size="2.54" layer="95"/>
@@ -5489,11 +5490,11 @@ This is due to the SP4T mux's voltage range.</text>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND33" gate="1" pin="GND"/>
-<wire x1="132.08" y1="91.44" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
-<junction x="137.16" y="88.9"/>
-<wire x1="137.16" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="88.9" x2="139.7" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="88.9" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
+<junction x="137.16" y="86.36"/>
+<wire x1="137.16" y1="86.36" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="86.36" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -5747,7 +5748,7 @@ This is due to the SP4T mux's voltage range.</text>
 <net name="F0SDA0" class="0">
 <segment>
 <pinref part="CT.F0.0" gate="G$1" pin="SDA"/>
-<pinref part="JP.F0.SD0" gate="G$1" pin="2"/>
+<pinref part="JP.F0.SDA0" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="373.38" x2="289.56" y2="383.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5837,16 +5838,16 @@ This is due to the SP4T mux's voltage range.</text>
 </net>
 <net name="MUX.A0" class="0">
 <segment>
-<label x="134.62" y="116.84" size="1.778" layer="95"/>
+<label x="127" y="119.38" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="119.38" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="MUX0" gate="G$1" pin="A"/>
 <wire x1="119.38" y1="116.84" x2="139.7" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="111.76" x2="139.7" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="109.22" x2="139.7" y2="116.84" width="0.1524" layer="91"/>
 <junction x="139.7" y="116.84"/>
 <pinref part="T.M0" gate="G$1" pin="TP"/>
-<wire x1="139.7" y1="116.84" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="116.84" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MUX.SDA" gate="A" pin="A0"/>
@@ -5877,15 +5878,15 @@ This is due to the SP4T mux's voltage range.</text>
 </net>
 <net name="MUX.A1" class="0">
 <segment>
-<label x="129.54" y="114.3" size="1.778" layer="95"/>
+<label x="127" y="114.3" size="1.778" layer="95"/>
 <pinref part="MUX1" gate="G$1" pin="A"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="114.3" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="111.76" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
-<junction x="132.08" y="114.3"/>
-<wire x1="132.08" y1="114.3" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="111.76" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="109.22" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<junction x="132.08" y="111.76"/>
+<wire x1="132.08" y1="111.76" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="T.M1" gate="G$1" pin="TP"/>
 </segment>
 <segment>
@@ -5918,7 +5919,7 @@ This is due to the SP4T mux's voltage range.</text>
 <net name="F1SDA0" class="0">
 <segment>
 <pinref part="CT.F1.0" gate="G$1" pin="SDA"/>
-<pinref part="JP.F1.SD0" gate="G$1" pin="2"/>
+<pinref part="JP.F1.SDA0" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="274.32" x2="289.56" y2="284.48" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6010,7 +6011,7 @@ This is due to the SP4T mux's voltage range.</text>
 <net name="F2SDA0" class="0">
 <segment>
 <pinref part="CT.F2.0" gate="G$1" pin="SDA"/>
-<pinref part="JP.F2.SD0" gate="G$1" pin="2"/>
+<pinref part="JP.F2.SDA0" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="180.34" x2="289.56" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6082,7 +6083,7 @@ This is due to the SP4T mux's voltage range.</text>
 <net name="F3SDA0" class="0">
 <segment>
 <pinref part="CT.F3.0" gate="G$1" pin="SDA"/>
-<pinref part="JP.F3.SD0" gate="G$1" pin="2"/>
+<pinref part="JP.F3.SDA0" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="86.36" x2="289.56" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6199,7 +6200,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="248.92" y1="43.18" x2="246.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP.F3.SD0" gate="G$1" pin="1"/>
+<pinref part="JP.F3.SDA0" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="106.68" x2="289.56" y2="111.76" width="0.1524" layer="91"/>
 <label x="279.4" y="111.76" size="1.778" layer="95"/>
 <wire x1="289.56" y1="111.76" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
@@ -6247,7 +6248,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="251.46" y1="137.16" x2="246.38" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP.F2.SD0" gate="G$1" pin="1"/>
+<pinref part="JP.F2.SDA0" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="200.66" x2="289.56" y2="205.74" width="0.1524" layer="91"/>
 <label x="279.4" y="205.74" size="1.778" layer="95"/>
 <wire x1="289.56" y1="205.74" x2="287.02" y2="208.28" width="0.1524" layer="91"/>
@@ -6267,7 +6268,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="248.92" y1="231.14" x2="246.38" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP.F1.SD0" gate="G$1" pin="1"/>
+<pinref part="JP.F1.SDA0" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="294.64" x2="289.56" y2="302.26" width="0.1524" layer="91"/>
 <label x="279.4" y="299.72" size="1.778" layer="95"/>
 <wire x1="289.56" y1="302.26" x2="287.02" y2="304.8" width="0.1524" layer="91"/>
@@ -6287,7 +6288,7 @@ This is due to the SP4T mux's voltage range.</text>
 <wire x1="248.92" y1="330.2" x2="246.38" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP.F0.SD0" gate="G$1" pin="1"/>
+<pinref part="JP.F0.SDA0" gate="G$1" pin="1"/>
 <label x="281.94" y="398.78" size="1.778" layer="95"/>
 <wire x1="289.56" y1="393.7" x2="289.56" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="403.86" x2="287.02" y2="406.4" width="0.1524" layer="91"/>
@@ -6378,21 +6379,21 @@ This is due to the SP4T mux's voltage range.</text>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="MUX1" gate="G$1" pin="C"/>
-<wire x1="132.08" y1="104.14" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="101.6" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="MUX0" gate="G$1" pin="C"/>
-<wire x1="139.7" y1="104.14" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="101.6" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="GPIO18"/>
-<wire x1="119.38" y1="114.3" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="X1" gate="G$1" pin="GPIO27"/>
 </segment>
 </net>
 <net name="N$12" class="0">
