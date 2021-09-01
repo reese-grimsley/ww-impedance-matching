@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4302,7 +4302,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.1524" drill="0">
+</class>
+<class number="1" name="PWR" width="0.3048" drill="0">
 </class>
 </classes>
 <parts>
@@ -4318,12 +4320,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="Z.F0.0" library="Resistors" deviceset="R-" device="0603"/>
 <part name="Z.F0.2" library="Resistors" deviceset="R-" device="0603"/>
 <part name="CT.F0.0" library="Capacitors" deviceset="TUNABLE_CAP_NCD2400MTR" device=""/>
-<part name="R_SDA" library="Resistors" deviceset="R-" device="0603">
+<part name="R_SDA" library="Resistors" deviceset="R-" device="0603" value="10k">
 <attribute name="MP" value="ERJ-PA3F1002V"/>
 <attribute name="MPN" value="ERJ-PA3F1002V"/>
 <attribute name="PART_NO" value="ERJ-PA3F1002V"/>
 </part>
-<part name="R_SCL" library="Resistors" deviceset="R-" device="0603">
+<part name="R_SCL" library="Resistors" deviceset="R-" device="0603" value="10k">
 <attribute name="MP" value="ERJ-PA3F1002V"/>
 <attribute name="MPN" value="ERJ-PA3F1002V"/>
 <attribute name="PART_NO" value="ERJ-PA3F1002V"/>
@@ -4338,9 +4340,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value="TPS76327DBVT"/>
 <attribute name="PART_NO" value=""/>
 </part>
-<part name="JP_LDO_IN" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
-<part name="JP_LDO_OUT" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
-<part name="JP_LDO_EN" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
+<part name="JP.LDO.IN" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
+<part name="JP.LDO.OUT" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
+<part name="JP.LDO.EN" library="Connectors" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39283/1"/>
 <part name="GND5" library="Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VIN" device="" value="2.7V"/>
 <part name="CT.F0.1" library="Capacitors" deviceset="TUNABLE_CAP_NCD2400MTR" device=""/>
@@ -4416,7 +4418,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="MUX.SCL" library="Switches" deviceset="ADG904BRUZ" device=""/>
 <part name="MUX.RF.IN" library="Switches" deviceset="ADG904BRUZ" device=""/>
 <part name="MUX.SDA" library="Switches" deviceset="ADG904BRUZ" device=""/>
-<part name="U4" library="Switches" deviceset="ADG904BRUZ" device=""/>
+<part name="MUX.RF.OUT" library="Switches" deviceset="ADG904BRUZ" device=""/>
 <part name="P+2" library="Supplies" deviceset="+5V" device=""/>
 <part name="GND9" library="Supplies" deviceset="GND" device=""/>
 <part name="GND10" library="Supplies" deviceset="GND" device=""/>
@@ -4523,9 +4525,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MPN" value="LSM0603412V"/>
 <attribute name="PART_NO" value="LSM0603412V"/>
 </part>
-<part name="TP1" library="TestPoints" deviceset="TP" device="TP14R" package3d_urn="urn:adsk.eagle:package:27966/1"/>
-<part name="TP2" library="TestPoints" deviceset="TP" device="TP14R" package3d_urn="urn:adsk.eagle:package:27966/1"/>
-<part name="TP3" library="TestPoints" deviceset="TP" device="TP14R" package3d_urn="urn:adsk.eagle:package:27966/1"/>
 <part name="R2" library="Resistors" deviceset="R-" device="0603" value="40">
 <attribute name="MP" value="ERJ-3EKF40R2V"/>
 <attribute name="MPN" value="ERJ-3EKF40R2V"/>
@@ -4538,6 +4537,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </part>
 <part name="T.M0" library="TestPoints" deviceset="TP" device="TP14R" package3d_urn="urn:adsk.eagle:package:27966/1"/>
 <part name="T.M1" library="TestPoints" deviceset="TP" device="TP14R" package3d_urn="urn:adsk.eagle:package:27966/1"/>
+<part name="C13" library="Capacitors" deviceset="C-" device="0603" value="1u">
+<attribute name="MP" value="CC0603MRX5R8BB105"/>
+<attribute name="MPN" value="CC0603MRX5R8BB105"/>
+<attribute name="PART_NO" value="CC0603MRX5R8BB105"/>
+</part>
+<part name="C14" library="Capacitors" deviceset="C-" device="0805">
+<attribute name="MP" value="CC0805KPX5R6BB106"/>
+<attribute name="MPN" value="CC0805KPX5R6BB106"/>
+<attribute name="PART_NO" value="CC0805KPX5R6BB106"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -4577,9 +4586,11 @@ If there are two, I2C addr conflict (0x60).
 NCD2400M1 has a different addr (0x61), but
 is out of stock as of 8/31/21. 
 If that is available, two can be used.</text>
-<text x="106.68" y="129.54" size="1.778" layer="91">Muxes take &lt;2.7V in
+<text x="109.22" y="124.46" size="1.778" layer="91">Muxes take &lt;2.7V in
 Divide and use LED indicator
 max 16mA GPIO</text>
+<text x="63.5" y="264.16" size="1.778" layer="91">Input signal should be less than 2.7V pk-pk
+This is due to the SP4T mux's voltage range.</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="88.9" y="101.6" smashed="yes" rot="MR0"/>
@@ -4659,13 +4670,13 @@ max 16mA GPIO</text>
 <attribute name="MPN" x="177.8" y="378.46" size="2.54" layer="96" display="off"/>
 <attribute name="PART_NO" x="177.8" y="378.46" size="2.54" layer="96" display="off"/>
 </instance>
-<instance part="JP_LDO_IN" gate="G$1" x="147.32" y="383.54" smashed="yes" rot="R180">
+<instance part="JP.LDO.IN" gate="G$1" x="147.32" y="383.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="147.32" y="388.62" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="JP_LDO_OUT" gate="G$1" x="195.58" y="383.54" smashed="yes" rot="MR0">
+<instance part="JP.LDO.OUT" gate="G$1" x="195.58" y="383.54" smashed="yes" rot="MR0">
 <attribute name="NAME" x="195.58" y="386.08" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="JP_LDO_EN" gate="G$1" x="147.32" y="378.46" smashed="yes" rot="MR0">
+<instance part="JP.LDO.EN" gate="G$1" x="147.32" y="378.46" smashed="yes" rot="MR0">
 <attribute name="NAME" x="149.86" y="373.38" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="GND5" gate="1" x="172.72" y="363.22" smashed="yes" rot="MR0">
@@ -4868,7 +4879,7 @@ max 16mA GPIO</text>
 <attribute name="NAME" x="195.34488125" y="88.092" size="2.085359375" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="194.233359375" y="32.4591" size="2.082940625" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="U4" gate="A" x="469.9" y="215.9" smashed="yes">
+<instance part="MUX.RF.OUT" gate="A" x="469.9" y="215.9" smashed="yes">
 <attribute name="NAME" x="464.58488125" y="240.492" size="2.085359375" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="463.473359375" y="184.8591" size="2.082940625" layer="96" ratio="10" rot="SR0"/>
 </instance>
@@ -5026,18 +5037,6 @@ max 16mA GPIO</text>
 <attribute name="MPN" x="139.7" y="109.22" size="1.778" layer="96" display="off"/>
 <attribute name="PART_NO" x="139.7" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="TP1" gate="G$1" x="109.22" y="96.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="110.49" y="95.25" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="107.95" y="97.79" size="1.778" layer="97" rot="R180"/>
-</instance>
-<instance part="TP2" gate="G$1" x="114.3" y="96.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="115.57" y="95.25" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="113.03" y="97.79" size="1.778" layer="97" rot="R180"/>
-</instance>
-<instance part="TP3" gate="G$1" x="119.38" y="96.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="120.65" y="95.25" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="118.11" y="97.79" size="1.778" layer="97" rot="R180"/>
-</instance>
 <instance part="R2" gate="G$1" x="124.46" y="114.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="128.27" y="112.8014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="123.19" y="112.522" size="1.778" layer="96" rot="R180"/>
@@ -5059,6 +5058,20 @@ max 16mA GPIO</text>
 <instance part="T.M1" gate="G$1" x="132.08" y="121.92" smashed="yes">
 <attribute name="NAME" x="130.81" y="123.19" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="133.35" y="120.65" size="1.778" layer="97"/>
+</instance>
+<instance part="C13" gate="G$1" x="157.48" y="378.46" smashed="yes">
+<attribute name="NAME" x="158.496" y="380.365" size="1.778" layer="95"/>
+<attribute name="VALUE" x="158.496" y="375.539" size="1.778" layer="96"/>
+<attribute name="MP" x="157.48" y="378.46" size="1.778" layer="96" display="off"/>
+<attribute name="PART_NO" x="157.48" y="378.46" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="157.48" y="378.46" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C14" gate="G$1" x="210.82" y="378.46" smashed="yes">
+<attribute name="NAME" x="211.836" y="380.365" size="1.778" layer="95"/>
+<attribute name="VALUE" x="211.836" y="375.539" size="1.778" layer="96"/>
+<attribute name="PART_NO" x="210.82" y="378.46" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="210.82" y="378.46" size="1.778" layer="96" display="off"/>
+<attribute name="MP" x="210.82" y="378.46" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -5108,6 +5121,13 @@ max 16mA GPIO</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="172.72" y1="365.76" x2="172.72" y2="368.3" width="0.1524" layer="91"/>
 <pinref part="U_LDO2.7" gate="A" pin="GND"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="373.38" x2="210.82" y2="368.3" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="368.3" x2="172.72" y2="368.3" width="0.1524" layer="91"/>
+<junction x="172.72" y="368.3"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="373.38" x2="157.48" y2="368.3" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="368.3" x2="172.72" y2="368.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CT.F0.0" gate="G$1" pin="GND"/>
@@ -5369,22 +5389,22 @@ max 16mA GPIO</text>
 <junction x="449.58" y="195.58"/>
 <wire x1="452.12" y1="193.04" x2="449.58" y2="193.04" width="0.1524" layer="91"/>
 <junction x="449.58" y="193.04"/>
-<pinref part="U4" gate="A" pin="GND_2"/>
-<pinref part="U4" gate="A" pin="GND_3"/>
-<pinref part="U4" gate="A" pin="GND_4"/>
-<pinref part="U4" gate="A" pin="GND_5"/>
-<pinref part="U4" gate="A" pin="GND_6"/>
-<pinref part="U4" gate="A" pin="GND_7"/>
-<pinref part="U4" gate="A" pin="GND_8"/>
-<pinref part="U4" gate="A" pin="GND_9"/>
-<pinref part="U4" gate="A" pin="GND_10"/>
-<pinref part="U4" gate="A" pin="GND_11"/>
-<pinref part="U4" gate="A" pin="GND"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_2"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_3"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_4"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_5"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_6"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_7"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_8"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_9"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_10"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND_11"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="434.34" y1="223.52" x2="434.34" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="434.34" y1="218.44" x2="449.58" y2="218.44" width="0.1524" layer="91"/>
 <junction x="449.58" y="218.44"/>
-<pinref part="U4" gate="A" pin="EN*"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="EN*"/>
 <wire x1="452.12" y1="228.6" x2="449.58" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="449.58" y1="228.6" x2="449.58" y2="218.44" width="0.1524" layer="91"/>
 </segment>
@@ -5475,21 +5495,21 @@ max 16mA GPIO</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="5V.JMP" class="1">
 <segment>
 <pinref part="X1" gate="G$1" pin="5V0"/>
 <wire x1="93.98" y1="134.62" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="JP_5V" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="3V3.JMP" class="1">
 <segment>
 <pinref part="X1" gate="G$1" pin="3V3"/>
 <wire x1="83.82" y1="129.54" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="JP_3V" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <pinref part="JP_3V" gate="G$1" pin="2"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
@@ -5583,7 +5603,7 @@ max 16mA GPIO</text>
 <pinref part="C8" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <pinref part="JP_5V" gate="G$1" pin="2"/>
@@ -5593,8 +5613,8 @@ max 16mA GPIO</text>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="132.08" y1="386.08" x2="132.08" y2="383.54" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="383.54" x2="132.08" y2="378.46" width="0.1524" layer="91"/>
-<pinref part="JP_LDO_IN" gate="G$1" pin="2"/>
-<pinref part="JP_LDO_EN" gate="G$1" pin="2"/>
+<pinref part="JP.LDO.IN" gate="G$1" pin="2"/>
+<pinref part="JP.LDO.EN" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="378.46" x2="142.24" y2="383.54" width="0.1524" layer="91"/>
 <junction x="142.24" y="383.54"/>
 <wire x1="132.08" y1="378.46" x2="142.24" y2="378.46" width="0.1524" layer="91"/>
@@ -5603,7 +5623,7 @@ max 16mA GPIO</text>
 <junction x="132.08" y="383.54"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="SDA.IN" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="SDA"/>
 <wire x1="104.14" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
@@ -5627,7 +5647,7 @@ max 16mA GPIO</text>
 <label x="223.52" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SCL.IN" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="SCL"/>
 <wire x1="104.14" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
@@ -5650,17 +5670,20 @@ max 16mA GPIO</text>
 <label x="220.98" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="LDO.IN" class="0">
 <segment>
-<pinref part="JP_LDO_IN" gate="G$1" pin="1"/>
+<pinref part="JP.LDO.IN" gate="G$1" pin="1"/>
 <pinref part="U_LDO2.7" gate="A" pin="IN"/>
-<wire x1="152.4" y1="383.54" x2="160.02" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="383.54" x2="157.48" y2="383.54" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="383.54" x2="160.02" y2="383.54" width="0.1524" layer="91"/>
+<junction x="157.48" y="383.54"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="LDO.OUT" class="1">
 <segment>
 <pinref part="U_LDO2.7" gate="A" pin="OUT"/>
-<pinref part="JP_LDO_OUT" gate="G$1" pin="2"/>
+<pinref part="JP.LDO.OUT" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="383.54" x2="190.5" y2="383.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5668,18 +5691,55 @@ max 16mA GPIO</text>
 <segment>
 <pinref part="U_LDO2.7" gate="A" pin="EN"/>
 <wire x1="160.02" y1="378.46" x2="152.4" y2="378.46" width="0.1524" layer="91"/>
-<pinref part="JP_LDO_EN" gate="G$1" pin="1"/>
+<pinref part="JP.LDO.EN" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="2.7V" class="0">
+<net name="2.7V" class="1">
 <segment>
-<pinref part="JP_LDO_OUT" gate="G$1" pin="1"/>
+<pinref part="JP.LDO.OUT" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="383.54" x2="205.74" y2="383.54" width="0.1524" layer="91"/>
 <label x="208.28" y="386.08" size="1.778" layer="95"/>
-<wire x1="205.74" y1="383.54" x2="213.36" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="383.54" x2="210.82" y2="383.54" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="383.54" x2="205.74" y2="386.08" width="0.1524" layer="91"/>
 <junction x="205.74" y="383.54"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VIN"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="MUX.SDA" gate="A" pin="VDD"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
+<wire x1="182.88" y1="81.28" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="81.28" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
+<junction x="180.34" y="81.28"/>
+</segment>
+<segment>
+<pinref part="MUX.RF.OUT" gate="A" pin="VDD"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="452.12" y1="233.68" x2="447.04" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
+<wire x1="447.04" y1="233.68" x2="434.34" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="447.04" y1="236.22" x2="447.04" y2="233.68" width="0.1524" layer="91"/>
+<junction x="447.04" y="233.68"/>
+</segment>
+<segment>
+<pinref part="MUX.SCL" gate="A" pin="VDD"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="147.32" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VIN"/>
+<wire x1="177.8" y1="147.32" x2="172.72" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="147.32" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
+<junction x="177.8" y="147.32"/>
+</segment>
+<segment>
+<pinref part="MUX.RF.IN" gate="A" pin="VDD"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
+<wire x1="185.42" y1="256.54" x2="182.88" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="256.54" x2="182.88" y2="259.08" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="256.54" x2="175.26" y2="256.54" width="0.1524" layer="91"/>
+<junction x="182.88" y="256.54"/>
 </segment>
 </net>
 <net name="F0SDA0" class="0">
@@ -5719,7 +5779,7 @@ max 16mA GPIO</text>
 <wire x1="353.06" y1="347.98" x2="355.6" y2="350.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="RF1"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="RF1"/>
 <wire x1="500.38" y1="231.14" x2="497.84" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="228.6" x2="487.68" y2="228.6" width="0.1524" layer="91"/>
 <label x="487.68" y="228.6" size="1.778" layer="95"/>
@@ -5805,7 +5865,7 @@ max 16mA GPIO</text>
 <label x="162.56" y="248.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="A0"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="A0"/>
 <wire x1="452.12" y1="226.06" x2="441.96" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="441.96" y1="226.06" x2="441.96" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="441.96" y1="215.9" x2="421.64" y2="215.9" width="0.1524" layer="91"/>
@@ -5845,7 +5905,7 @@ max 16mA GPIO</text>
 <label x="162.56" y="246.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="A1"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="A1"/>
 <wire x1="452.12" y1="223.52" x2="444.5" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="444.5" y1="223.52" x2="444.5" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="444.5" y1="213.36" x2="421.64" y2="213.36" width="0.1524" layer="91"/>
@@ -5976,12 +6036,13 @@ max 16mA GPIO</text>
 <wire x1="332.74" y1="139.7" x2="332.74" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="Z.F2.2" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="154.94" x2="330.2" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="154.94" x2="342.9" y2="154.94" width="0.1524" layer="91"/>
 <junction x="332.74" y="154.94"/>
 <label x="330.2" y="157.48" size="1.778" layer="95"/>
+<wire x1="332.74" y1="154.94" x2="353.06" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="154.94" x2="355.6" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="RF3"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="RF3"/>
 <wire x1="500.38" y1="226.06" x2="497.84" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="223.52" x2="487.68" y2="223.52" width="0.1524" layer="91"/>
 <label x="487.68" y="223.52" size="1.778" layer="95"/>
@@ -6047,12 +6108,13 @@ max 16mA GPIO</text>
 <wire x1="332.74" y1="45.72" x2="332.74" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="Z.F\3.2" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="60.96" x2="330.2" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="60.96" x2="342.9" y2="60.96" width="0.1524" layer="91"/>
 <junction x="332.74" y="60.96"/>
 <label x="330.2" y="63.5" size="1.778" layer="95"/>
+<wire x1="332.74" y1="60.96" x2="353.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="60.96" x2="355.6" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="RF4"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="RF4"/>
 <wire x1="500.38" y1="223.52" x2="497.84" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="220.98" x2="487.68" y2="220.98" width="0.1524" layer="91"/>
 <label x="487.68" y="220.98" size="1.778" layer="95"/>
@@ -6147,47 +6209,9 @@ max 16mA GPIO</text>
 <wire x1="243.84" y1="68.58" x2="246.38" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="MUX.SDA" gate="A" pin="VDD"/>
-<pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
-<wire x1="182.88" y1="81.28" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="81.28" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
-<junction x="180.34" y="81.28"/>
-</segment>
-<segment>
-<pinref part="U4" gate="A" pin="VDD"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="452.12" y1="233.68" x2="447.04" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
-<wire x1="447.04" y1="233.68" x2="434.34" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="447.04" y1="236.22" x2="447.04" y2="233.68" width="0.1524" layer="91"/>
-<junction x="447.04" y="233.68"/>
-</segment>
-<segment>
-<pinref part="MUX.SCL" gate="A" pin="VDD"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="147.32" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="VIN"/>
-<wire x1="177.8" y1="147.32" x2="172.72" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="147.32" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
-<junction x="177.8" y="147.32"/>
-</segment>
-<segment>
-<pinref part="MUX.RF.IN" gate="A" pin="VDD"/>
-<pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
-<wire x1="185.42" y1="256.54" x2="182.88" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="256.54" x2="182.88" y2="259.08" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="256.54" x2="175.26" y2="256.54" width="0.1524" layer="91"/>
-<junction x="182.88" y="256.54"/>
-</segment>
-</net>
 <net name="RF_OUT" class="0">
 <segment>
-<pinref part="U4" gate="A" pin="RFC"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="RFC"/>
 <pinref part="SMA.OUT" gate="G1" pin="1"/>
 <wire x1="487.68" y1="233.68" x2="528.32" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="528.32" y1="233.68" x2="528.32" y2="264.16" width="0.1524" layer="91"/>
@@ -6342,7 +6366,7 @@ max 16mA GPIO</text>
 <wire x1="353.06" y1="248.92" x2="355.6" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="RF2"/>
+<pinref part="MUX.RF.OUT" gate="A" pin="RF2"/>
 <wire x1="500.38" y1="228.6" x2="497.84" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="226.06" x2="487.68" y2="226.06" width="0.1524" layer="91"/>
 <label x="487.68" y="226.06" size="1.778" layer="95"/>
@@ -6374,29 +6398,6 @@ max 16mA GPIO</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="X1" gate="G$1" pin="GPIO17"/>
 <wire x1="109.22" y1="116.84" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="TP1" gate="G$1" pin="TP"/>
-<pinref part="X1" gate="G$1" pin="GPIO04"/>
-<wire x1="109.22" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="GPIO25"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
-<wire x1="104.14" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="101.6" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="GPIO24"/>
-<pinref part="TP3" gate="G$1" pin="TP"/>
-<wire x1="104.14" y1="104.14" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="104.14" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
