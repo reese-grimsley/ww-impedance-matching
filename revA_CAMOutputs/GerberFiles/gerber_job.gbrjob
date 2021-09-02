@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-09-02T15:06:03Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.517394,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "ww-impedance-matching"
+        },
+        "Owner": "Reese Grimsley <rgrimsle@andrew.cmu.edu>",
+        "Size": {
+            "X": 69.83,
+            "Y": 59.36
+        }
+    }
+}
