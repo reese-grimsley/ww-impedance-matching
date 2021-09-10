@@ -50,7 +50,7 @@ if __name__ == "__main__":
     enable_matching_circuit(0)
 
     while True:
-        input_str = raw_input('Input matching circuit to configure (an integer)\n')
+        input_str = input('Input matching circuit to configure (an integer)\n')
         print()
         try:
             matching_circuit_num = int(input_str)
