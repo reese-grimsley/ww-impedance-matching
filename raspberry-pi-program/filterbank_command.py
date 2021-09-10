@@ -29,7 +29,7 @@ def enable_matching_circuit(circuit_num, m0_pin=MUX_0_PIN, m1_pin=MUX_1_PIN):
     circuit number should be within 0,3. We'll use modulo 4 anyway
     '''
 
-    assert circuit_num >0, 'use a positive number (integer) between 0 and 3'
+    assert circuit_num >=0, 'use a positive number (integer) between 0 and 3'
 
     m0_value = GPIO.HIGH if circuit_num & 0x1 == 0x1 else GPIO.LOW
     m1_value = GPIO.HIGH if circuit_num & 0x2 == 0x2 else GPIO.LOW
