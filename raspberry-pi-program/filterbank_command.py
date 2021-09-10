@@ -28,7 +28,6 @@ def enable_matching_circuit(circuit_num, m0_pin=MUX_0_PIN, m1_pin=MUX_1_PIN):
     '''
     circuit number should be within 0,3. We'll use modulo 4 anyway
     '''
-
     assert circuit_num >=0, 'use a positive number (integer) between 0 and 3'
 
     m0_value = GPIO.HIGH if circuit_num & 0x1 == 0x1 else GPIO.LOW
@@ -36,8 +35,6 @@ def enable_matching_circuit(circuit_num, m0_pin=MUX_0_PIN, m1_pin=MUX_1_PIN):
 
     GPIO.output(m0_pin, m0_value)
     GPIO.output(m1_pin, m1_value)
-
-
 
 if __name__ == "__main__":
     setup_gpio_pins()
@@ -53,7 +50,8 @@ if __name__ == "__main__":
     enable_matching_circuit(0)
 
     while True:
-        input_str = input('Input matching circuit to configure (an integer)')
+        input_str = input('Input matching circuit to configure (an integer)\n')
+        print()
         try:
             matching_circuit_num = int(input(input_str))
             enable_matching_circuit(matching_circuit_num)
