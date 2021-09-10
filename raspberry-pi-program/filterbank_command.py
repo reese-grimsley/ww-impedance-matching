@@ -11,10 +11,13 @@ CAP_I2C_ADDR = 0x60
 def i2c_setup(bus_id=I2C_BUS_ID):
 
     bus = smbus.SMBus(bus_id)
+    time.sleep(.5)
     return bus
 
 def i2c_read_cap(bus, address=CAP_I2C_ADDR):
 
+    read_bytes = bus.read_byte_data(address, 0) #this doesn't actually need an address..
+    return read_bytes
 
 def setup_gpio_pins(m0_pin=MUX_0_PIN, m1_pin=MUX_1_PIN):
     GPIO.setup(m0_pin, GPIO.OUT, initial=GPIO.LOW)
