@@ -50,10 +50,15 @@ if __name__ == "__main__":
     enable_matching_circuit(0)
 
     while True:
+        print('CLI:')
+        print('  - z (integer) will activate matching circuit')
+        print('  - c (integer) will set a value for the digitally tuned capacitor (value space TBD)')
         input_str = input('Input matching circuit to configure (an integer)\n')
         print()
         try:
-            matching_circuit_num = int(input_str)
-            enable_matching_circuit(matching_circuit_num)
+            if input_str[0] == 'z':
+                matching_circuit_num = int(input_str)
+                enable_matching_circuit(matching_circuit_num)
+            elif
         except ValueError:
             print('Invalid matching circuit; try an integer between 0 and 3')
