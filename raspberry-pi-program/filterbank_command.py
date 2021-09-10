@@ -20,6 +20,7 @@ def i2c_read_cap(bus, address=CAP_I2C_ADDR):
     return read_bytes
 
 def setup_gpio_pins(m0_pin=MUX_0_PIN, m1_pin=MUX_1_PIN):
+    GPIO.setmode(GPIO.BOARD)
     GPIO.setup(m0_pin, GPIO.OUT, initial=GPIO.LOW)
     GPIO.setup(m1_pin, GPIO.OUT, initial=GPIO.LOW)
 
