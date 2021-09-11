@@ -77,3 +77,6 @@ if __name__ == "__main__":
         except ValueError as e:
             print('Invalid value; try an integer between 0 and 3')
             print(e)
+        except OSError as e:
+            print('OS Error; likley an I2C issue')
+            print(e)
