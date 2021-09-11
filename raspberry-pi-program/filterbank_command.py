@@ -19,13 +19,13 @@ def i2c_read_cap(bus, address=CAP_I2C_ADDR):
     read_bytes = bus.read_byte_data(address, reg_addr)
     return read_bytes
 
-def i2c_write_cap_value_nonvolatile(bus, value, address=CAP_I2C_ADDR):
+def i2c_write_cap_value_volatile(bus, value, address=CAP_I2C_ADDR):
     assert value >=0 and value < 0x200 #9 bit value, unsigned
     byte_1 = 0 | ((value & 0x100) >> 8) # first config byte. LSbit is most signicant of 9-bit value
     byte_2 = value & 0xFF #second config byte; lower 8 bits of cap value
     bus.write_byte_data(address, byte_1, byte_2)
 
-def i2c_write_cap_value_volatile(*args, **kwargs):
+def i2c_write_cap_value_nonvolatile(*args, **kwargs):
     raise NotImplementedError()
 
 
